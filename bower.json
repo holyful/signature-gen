@@ -1,0 +1,46 @@
+{
+  "name": "signature-gen",
+  "version": "0.0.1",
+  "homepage": "https://github.com/holyful/signature-gen",
+  "authors": [
+    "daxuan.she <daxuan.she@dianping.com>"
+  ],
+  "description": "signature generator for dianping.com",
+  "main": "index.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "~0.12.1",
+    "zepto": "~1.1.4",
+    "requirejs": "~2.1.15",
+    "react-bootstrap": "~0.13.0",
+    "bootstrap-css": "~3.2.0",
+    "socket.io-client": "~1.2.1"
+  },
+  "exportsOverride": {
+    "react": {
+      ".": "*.js"
+    },
+    "zepto": {
+      ".": "*.js"
+    },
+    "react-bootstrap": {
+      ".": "*.js",
+      "utils": "utils/*"
+    },
+    "bootstrap-css": {
+      "css": "css/*.css",
+      "fonts": "fonts/*.*"
+    },
+    "socket.io-client":{
+      ".":"socket.io.js",
+      "lib":"lib/*.js"
+    }
+  }
+}

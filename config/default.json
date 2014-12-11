@@ -1,0 +1,6 @@
+{
+	"upload":{
+		"path": "build"
+	},
+	"wsPort": 5566
+}
